@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
+   header 
+    {
+      background-color: #011b29;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo 
+    {
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+    .logo img 
+    {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav a
+     {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+    nav a:hover 
+    {
+      text-decoration: underline;
+    }
+    .hero 
+    {
+      background: linear-gradient(to right, #83a4d4, #07868d);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 
+    {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero img
+    {
+      max-width: 250px;
+      display: block;
+      margin: 20px auto;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #333;
+    }
+    #searchBar {
+      display: block;
+      margin: 30px auto 10px auto;
+      padding: 12px 20px;
+      width: 350px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .country-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .country-card {
+      background-color: white;
+      border-radius: 10px;
+      margin: 20px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: none;
+    }
+
+    .country-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .country-card h2 {
+      margin: 15px 0 5px 0;
+    }
+
+    .country-card a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+    .news-intro {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .contact {
+      background-color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .contact h3 {
+      margin-bottom: 10px;
+    }
+
+    .contact p {
+      margin: 5px 0;
+    }
+    footer {
+      background-color: #1056ee;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+  <header>
+    <div class="logo">
+      <img src="ChatGPT Image.png" alt="Logo" width="50">
+      <span>WeaNews</span>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">🙎🏻About</a>
+      <a href="#news-info">🔎  search</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+ <div class="hero" id="home">
+    <h1>📰 News</h1>
+    <p>News is the way we learn about what is happening around us in our city, country, and the world</p>
+  </div>
+  <section id="about">
+    <h2 class="section-title"> 🙎🏻About Us</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        WeaNews provides accurate News updates from around the world. 
+      Powered by Opennews API, our platform helps users stay informed about current politics, economy, and sports for any country.
+    </p>
+    <br>
+    <p style="text-align:center; max-width:700px; margin:auto;"> 📰 Shares the latest news happening in the country</p>
+     <br>
+    <p style="max-width: 700px; margin: auto;">News is the way we learn about what is happening around us – in our city, country, and the world:</p>
+     <br>
+  </section>
+  <section id="news-info">
+     <p style="text-align:center; max-width:700px; margin:auto;"> <strong> To 🔎 search a Country for News  </strong></p>
+  <input type="text" id="searchBar" placeholder="Search news by country (e.g., India, USA)">
+  <div class="country-list" id="countryList">
+    <div class="country-card" data-country="india">
+      <img src="images.jfif" alt="India News">
+      <h2>India</h2>
+      <p class="news-intro">Latest coverage on Indian politics.</p>
+      <a href="https://www.hindustantimes.com" target="_blank">Visit Hindustan Times</a>
+      <p class="news-intro">Latest coverage on Indian economy </p>
+      <a href="https://timesofindia.indiatimes.com" target="_blank">Times of India</a>
+      <p class="news-intro">Latest coverage on Indian Sports </p>
+      <a href="https://www.sportskeeda.com/" target="_blank">Sportskeeda</a>
+    </div>
+
+    <div class="country-card" data-country="usa">
+      <img src="download.png" alt="USA News">
+      <h2>USA</h2>
+      <p class="news-intro">Breaking stories from America NYTIMES  </p>
+      <a href="https://www.nytimes.com" target="_blank">Visit New York Times</a>
+      <p class="news-intro">Breaking stories from America CNN </p>
+      <a href="https://edition.cnn.com" target="_blank">CNN</a>
+      <p class="news-intro">Breaking stories from American Sports </p>
+      <a href="https://www.foxsports.com/" target="_blank">Fox Sports</a>
+    </div>
+
+    <div class="country-card" data-country="uk">
+      <img src="images (1).jfif" alt="UK News">
+      <h2>UK</h2>
+      <p class="news-intro">Coverage of British politics </p>
+      <a href="https://www.bbc.com/news" target="_blank">Visit BBC News</a>
+      <p class="news-intro">Coverage of British Sports </p>
+      <a href="https://www.sonysportsnetwork.com/" target="_blank">Sony Sports Network</a>
+      <p class="news-intro">Coverage of British The Telegraph.</p>
+      <a href="https://www.telegraph.co.uk" target="_blank">The Telegraph</a>
+    </div>
+
+    <div class="country-card" data-country="australia">
+      <img src="download.jfif" alt="Australia News">
+      <h2>Australia</h2>
+      <p class="news-intro">Updated daily from ABC News Australia.</p>
+      <a href="https://www.abc.net.au/news" target="_blank">Visit ABC News</a>
+       <p class="news-intro">Updated daily from SMH Australia</p>
+       <a href="https://www.smh.com.au" target="_blank">Sydney Morning Herald</a>
+        <p class="news-intro">Updated daily from Australia sports.</p>
+        <a href="https://www.theaustralian.com.au/sport" target="_blank">Australian Sports</a>
+
+    </div>
+  </div>
+  </section>
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact">
+      <p>Email: WeaNews@gmail.com</p>
+      <p>Phone: +91-9876543210</p>
+      <p>Address: WeaNews HQ, chennai, India</p>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 WeaNews. All rights reserved. Created By Anandh
+  </footer>
+  <script>
+    const searchBar = document.getElementById("searchBar");
+    const cards = document.querySelectorAll(".country-card");
+
+    searchBar.addEventListener("input", () => {
+      const query = searchBar.value.trim().toLowerCase();
+      let anyVisible = false;
+
+      cards.forEach(card => {
+        const country = card.getAttribute("data-country");
+        if (country.includes(query) && query !== "") {
+          card.style.display = "block";
+          anyVisible = true;
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      if (!anyVisible && query !== "") {
+        document.getElementById("countryList").innerHTML = `
+          <p style="text-align:center; font-size:18px;">No news found for "<strong>${query}</strong>".</p>
+        `;
+      }
+    });
+  </script>
+
+</body>
+</html>

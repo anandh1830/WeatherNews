@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WeaNews</title>
+  <style>
+  *{box-sizing: border-box;scroll-behavior: smooth;}
+    body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 0;background-color: #f4f4f4;}
+    header{background-color: #011b29;color: white;padding: 15px 30px;display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;}
+    .logo{font-size: 24px;font-weight: bold;display: flex;align-items: center;}
+    .logo img {height: 40px;margin-right: 10px;}
+    nav a{color: white;text-decoration: none;margin-left: 20px;font-weight: 500;}
+    nav a:hover{text-decoration: underline;}
+    .hero {background: linear-gradient(to right, #83a4d4, #07868d);color: white;padding: 60px 20px;text-align: center;}
+    .hero h1{font-size: 36px;margin-bottom: 10px;}
+    .hero img{max-width: 250px;display: block;margin: 20px auto;}
+    .search-container{text-align: center;background-color: white;padding: 30px;border-radius: 15px;box-shadow: 0 5px 15px rgba(0,0,0,0.1);text-align: center;max-width: 400px;margin: 20px auto;}
+    input[type="text"]{width: 80%;padding: 10px;border-radius: 8px;border: 1px solid #ccc;}
+    button{margin-top: 10px;padding: 10px 20px;background-color: #0077b6;color:white;border:none;border-radius: 8px;cursor: pointer;}
+    section{padding: 40px 20px;max-width: 900px;margin: auto;}
+    .contact p{font-size: 16px;line-height: 1.6;text-align: center;}
+    footer{background-color: #0077b6;color: white;text-align: center;padding: 15px;margin-top: 40px;}
+    @media screen and (max-width: 600px){nav {display: flex;flex-direction: column;align-items: center;margin-top: 10px;}
+    nav a {margin: 10px 0;}}   
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="ChatGPT Image.png" alt="Logo">
+      <span>WeaNews</span>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">🙎🏻About</a>
+      <a href="#news-info">📰 News</a>
+      <a href="#weather-info">🌦️  Weather</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <br>
+  <h2>Search for Weather or News</h2>
+  <input type="text" id="searchBox" placeholder="Type here to get news and weather...">
+  <button onclick="redirectToPage()">Go</button>
+  <br>
+  <br>
+  <div class="hero" id="home">
+    <h1>Welcome to WeaNews</h1>
+    <p>Your single hub for international news & weather updates</p>
+    <img src="ChatGPT Image.png" alt="CodTech Banner">
+  </div>
+  <br>
+  <section id="about"style="text-align: center; padding: 40px 20px;">
+    <h2 class="section-title">🙎🏻About Us</h2>
+    <br>
+    <p style="text-align:left; max-width:700px; margin:auto;">WeaNews helps people stay informed about :</p>
+    <br>
+    <br>
+    <p style="text-align:center; max-width:700px; margin:auto;"> ☀️🌧️ It provides daily weather updates – temperature, rain, sun, wind, etc.</p>
+    <p style="text-align:center; max-width:700px; margin:left;"> 📰 Shares the latest news happening in the country</p>
+    <p style="text-align:center; max-width:700px; margin:left;"> 📱 Easy to use on any mobile phones or any systems </p>
+    <br>
+    <p style="text-align:left; max-width:700px; margin:auto;">The goal of WeaNews is to give quick, accurate, and easy-to-understand information </p>
+    <br>
+    <p style="text-align:left; max-width:700px; margin:auto;">If you need an umbrella or want to know what’s going around you, WeaNews has it all in one.</p>
+  </section>
+  <br>
+<br>
+<br>
+<section id="news-info" style="text-align: center; padding: 40px 20px; background-color: #ecf0f3;">
+  <h2 class="section-title">📰 News</h2>
+  <br>
+  <p style="max-width: 700px; margin: auto;">News is the way we learn about what is happening around us – in our city, country, and the world:</p>
+  <br>
+  <ul style="list-style: none; padding: 0; max-width: 700px; margin: 20px auto; text-align: left;">
+    <li>🏛️ <strong>Politics</strong> – government decisions, elections, and leaders.</li>
+    <li>🏥 <strong>Health</strong> – new diseases, treatments, and health tips.</li>
+    <li>📈 <strong>Economy</strong> – jobs, money, prices, and business news.</li>
+    <li>🌍 <strong>World events</strong> – important things happening in other countries.</li>
+    <li>🎭 <strong>Entertainment</strong> – movies, celebrities, and shows.</li>
+    <li>⚽ <strong>Sports</strong> – matches, scores, and player updates.</li>
+  </ul>
+  <h3 style="margin-top: 40px;">📢 Why is News Important?</h3>
+  <ul style="list-style: none; padding: 0; max-width: 700px; margin: 20px auto; text-align: left;">
+    <li>🧠 Helps people stay <strong>informed and aware</strong>.</li>
+    <li>🗳️ Helps citizens make <strong>smart decisions</strong>, like voting.</li>
+    <li>👥 Connects people to the world and to each other.</li>
+    <li>🔍 Allows people to <strong>learn the truth</strong> and fight fake news.</li>
+  </ul>
+  </p>
+</section>
+  <br>
+  <hr>
+  <br>
+  <section id="weather-info" style="text-align: center; padding: 40px 20px; background-color: #e9edf0;">
+  <h2 class="section-title">🌦️  Weather </h2>
+  <p style="max-width: 700px; margin: auto;">Weather means the <strong>condition of the air</strong> outside at a certain place and time. It includes things like:</p>
+  <ul style="list-style: none; padding: 0; max-width: 700px; margin: 20px auto; text-align: left;">
+    <li>☀️ <strong>Sunshine</strong> – when the sun is shining and the sky is clear.</li>
+    <li>🌧️ <strong>Rain</strong> – when water falls from the sky as droplets.</li>
+    <li>⛅ <strong>Clouds</strong> – when the sky is covered with white or grey clouds.</li>
+    <li>🌬️ <strong>Wind</strong> – when air moves across the land.</li>
+    <li>❄️ <strong>Snow</strong> – when frozen flakes fall in cold weather.</li>
+    <li>🌡️ <strong>Temperature</strong> – how hot or cold it is.</li>
+    <li>🌩️ <strong>Storms</strong> – when there is thunder, lightning, and heavy rain.</li>
+  </ul>
+  <h3 style="margin-top: 40px;">📅 Why we want to know about Weather?</h3>
+  <ul style="list-style: none; padding: 0; max-width: 700px; margin: 20px auto; text-align: left;">
+    <li>🌄 Helps people decide <strong>what to wear</strong>.</li>
+    <li>🧑‍🌾 Farmers use it to <strong>plan farming work</strong>.</li>
+    <li>🛫 Important for <strong>safe travel</strong>.</li>
+    <li>🎉 Useful for <strong>planning events</strong> like weddings or trips.</li>
+  </ul>
+  </p>
+</section>
+  </section>
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact">
+      <p>Email: WeaNews@gmail.com</p>
+      <p>Phone: +91-9876543210</p>
+      <p>Address: WeaNews HQ, chennai, India</p>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 WeaNews. All rights reserved. Created By Anandh
+  </footer>
+  <script>
+    const apiKey = "667bec42163ea0079d5f6882eabdbd38"; 
+    function getWeather() {
+      const city = document.getElementById("cityInput").value.trim();
+      const resultDiv = document.getElementById("weatherResult");
+
+      if (city === "") {
+        resultDiv.innerHTML = "Please enter a city name.";
+        return;
+      }
+      resultDiv.innerHTML = "Fetching weather data...";
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+      fetch(url)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("City not found");
+          }
+          return response.json();
+        })
+        .then(data => {
+          const temp = data.main.temp;
+          const desc = data.weather[0].description;
+          const humidity = data.main.humidity;
+          const icon = data.weather[0].icon;
+          const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+          resultDiv.innerHTML = `
+            <img src="${iconUrl}" alt="Weather Icon">
+            <p><strong>Temperature:</strong> ${temp} °C</p>
+            <p><strong>Condition:</strong> ${desc}</p>
+            <p><strong>Humidity:</strong> ${humidity}%</p>
+          `;
+        })
+        .catch(error => {
+          resultDiv.innerHTML = "Error: " + error.message;
+        });
+    }
+    const searchBar = document.getElementById("searchBar");
+    const cards = document.querySelectorAll(".country-card");
+    const countryList = document.getElementById("countryList");
+    searchBar.addEventListener("input", () => {
+      const query = searchBar.value.trim().toLowerCase();
+      let anyVisible = false;
+      cards.forEach(card => {
+        const country = card.getAttribute("data-country");
+        if (country.includes(query) && query !== "") {
+          card.style.display = "block";
+          anyVisible = true;
+        } else {
+          card.style.display = "none";
+        }
+      });
+      if (query === "") {
+        cards.forEach(card => card.style.display = "block");
+      }
+      if (!anyVisible && query !== "") {
+        countryList.innerHTML = `<p style="text-align:center;">No news found for "<strong>${query}</strong>".</p>`;
+      }
+    });
+     function redirectToPage() {
+      const query = document.getElementById('searchBox').value.toLowerCase().trim();
+
+      if (query === "weather") {
+        window.location.href = "wheather.html";
+      } else if (query === "news") {
+        window.location.href = "news.html";
+      } else {
+        alert("Please type 'weather' or 'news'");
+      }
+    }
+  </script>
+</body>
+</html>
